@@ -6,10 +6,19 @@ const api = axios.create({
 
 });
 
-api.interceptors.response.use(function(config){
+api.interceptors.request.use(function(config){
     console.log("request start", config);
     return config;
 },function(error){
     console.log("request err", error);
     return Promise.reject(error);
 });
+
+api.interceptors.response.use(function(response){
+    console.log("get response", response);
+    return response;
+},function(error){
+    console.log("response err", error);
+    return Promise.reject(error);
+});
+export default api

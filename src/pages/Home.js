@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
+import { movieAction } from '../redux/action/movieAction'
+import { useDispatch } from 'react-redux'
 
 const Home = () => {
-
-useEffect(()=>{
+  const dispatch = useDispatch();
   
+  useEffect(()=>{
+    dispatch(movieAction.getMovies());
 },[])
 
 
