@@ -1,0 +1,13 @@
+.nav_item{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.logoImg{
+    margin-right: 20px;
+}
