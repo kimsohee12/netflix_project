@@ -34,8 +34,9 @@
     z-index: 1;
 }
 .movieCard{
-    width: 310px;
-    height: 200px;
+    width: 280px;
+    height: 155px;
+    border-radius: 3px;
 }
 .overlay{
     display: flex;
@@ -53,6 +54,17 @@
 }
 .movieCard:hover{
     transform: scale(1.1);
+}
+.genre{
+    margin-left: 10px;
+}
+body{
+    background-color: rgb(11, 11, 11) !important;
+}
+body h2{
+    color: aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 

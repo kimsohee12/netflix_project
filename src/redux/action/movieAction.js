@@ -14,18 +14,21 @@ const getMovies=()=>{
             const topRateApi = api.get(`/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`);
             //개봉 예정 영화 
             const upCommingApi = api.get(`/movie/upcoming?api_key=${API_KEY}&language=en-US&page=1`)
+            const genreApi = api.get(`/genre/movie/list?api_key=${API_KEY}&language=en-US`)
     
-            let [popularMovies , topRatedMovies , upcomingMovies] = await Promise.all([popularMovieApi,topRateApi,upCommingApi]);
+            let [popularMovies , topRatedMovies , upcomingMovies,genreList] = await Promise.all([popularMovieApi,topRateApi,upCommingApi,genreApi]);
             console.log("promise 후에 받는 popularMovies :",popularMovies);
             console.log("promise 후에 받는 topRatedMovies :",topRatedMovies);
             console.log("promise 후에 받는 upcomingMovies :",upcomingMovies);
+            console.log("promise 후에 받는 genreList :",genreList);
             
             dispatch({
                 type : "GET_MOVIES_SUCCESS",
                 payload : {
                     popularMovies : popularMovies.data,
                     topRatedMovies : topRatedMovies.data,
-                    upcomingMovies : upcomingMovies.data
+                    upcomingMovies : upcomingMovies.data,
+                    genreList : genreList.data.genres
                     
                 }//안에있는 data 필드만 보내줌
             });
@@ -33,12 +36,7 @@ const getMovies=()=>{
             dispatch({type : "GET_MOVIES_FAILURE"})
         }
 
-
     };
-    
-    
-    
-    
 
 };
 

@@ -12,7 +12,7 @@ const Navigation = () => {
   return (
     <>
     
-    <Navbar expand="lg" bg="dark" data-bs-theme="dark" >
+    <Navbar expand="lg">
         <Container fluid>
             <Navbar.Brand href="/"><img width={'90px'} src={NLogo} className='logoImg'/></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll"/>
