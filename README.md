@@ -18,6 +18,7 @@ redux를 통한 상태관리 및 The Movie API 를 활용한 NETFILX clone codin
   -> redux 상태관리 라이브러리를 활용
     ![image](https://github.com/kimsohee12/react-redux_netflix/assets/130417959/e65fc94d-3c0d-4657-ac74-9cc43ba1fc0b)
     ![image](https://github.com/kimsohee12/react-redux_netflix/assets/130417959/7261e5c4-4b9d-4993-bd66-f69ea14164b7)
+    ![image](https://github.com/kimsohee12/react-redux_netflix/assets/130417959/a34147ef-5203-4c3a-93a4-77bc4eeb6771)
   
  ## ⛏ 기술스택
 <table>
