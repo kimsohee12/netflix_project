@@ -37,7 +37,6 @@ redux를 통한 상태관리 및 The Movie API 를 활용한 NETFILX clone codin
             <img src="https://img.shields.io/badge/Axios-5A29E4?style=for-the-badge&logo=axios&logoColor=white"/> 
           <img src="https://img.shields.io/badge/ReactRouter-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white"/> 
           <img src="https://img.shields.io/badge/redux-764ABC?style=for-the-badge&logo=redux&logoColor=white"/> 
-
         </td>
     </tr>
     <tr>
