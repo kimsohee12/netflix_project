@@ -17,7 +17,7 @@ const Home = () => {
 
 // loading 이 true(데이터 도착 전) : 로딩스피너 / false(데이터 도착 후 or 에러) : 데이터 보여주기 
   if(loading){
-    return  <ClipLoader color="#999999" loading={loading} size={150} />
+    return  <ClipLoader className='loading' color="#999999" loading={loading} size={150} />
   }
 
 
